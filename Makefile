@@ -31,3 +31,8 @@ merge:
 	git merge main
 	git push origin oqdev
 	git checkout main
+
+pip-install:
+	pip install -r requirements.txt
+pip-freeze:
+	pip freeze > requirements.txt
