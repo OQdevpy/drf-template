@@ -21,7 +21,13 @@ migrate:
 push:
 	git add .
 	git commit -m "Updated: $$(date +'%Y-%m-%d %H:%M:%S')"
-	git push -f origin main
+	git push origin main
 
 pull:
 	git pull origin main
+
+merge:
+	git checkout oqdev
+	git merge main
+	git push origin oqdev
+	git checkout main
